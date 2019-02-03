@@ -114,22 +114,28 @@
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="search-form-item">
               <label for="arrival">Дата заезда:</label>
-              <input id="arrival" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              <input id="arrival" type="text" name="arrival-date" value="24 апреля 2017">
+              <button class="calendar"></button>
             </p>
 
             <p class="search-form-item">
               <label for="departure">Дата выезда:</label>
-              <input id="departure" type="text" name="departure-date" value="" placeholder="4 июля 2017">
+              <input id="departure" type="text" name="departure-date" value="4 июля 2017">
+              <button class="calendar"></button>
             </p>
 
             <p class="search-form-item">
               <label for="adults">Взрослые:</label>
+              <button class="button-minus" type="button"><span class="visually-hidden">-</span></button>
               <input id="adults" type="number" name="adults-number" value="2">
+              <button class="button-plus" type="button"><span class="visually-hidden">+</span></button>
             </p>
 
             <p class="search-form-item">
               <label for="children">Дети:</label>
+              <button class="button-minus" type="button"><span class="visually-hidden">-</span></button>
               <input id="children" type="number" name="children-number" value="0">
+              <button class="button-plus" type="button"><span class="visually-hidden">+</span></button>
             </p>
 
             <button class="button" type="submit">Найти</button>
@@ -152,9 +158,9 @@
         </p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#">Наш аккаунт в Твиттер</a></li>
-            <li><a class="social-button" href="#">Наша страница на Фейсбуке</a></li>
-            <li><a class="social-button" href="#">Наш Ютуб-канал</a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Наш аккаунт в Твиттер</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Наша страница на Фейсбуке</span></a></li>
+            <li><a class="social-button" href="#"><span class="visually-hidden">Наш Ютуб-канал</span></a></li>
           </ul>
         </div>
         <p class="footer-copyright">
