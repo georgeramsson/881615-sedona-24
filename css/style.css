@@ -2,11 +2,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, san-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  text-transform: uppercase;
 
   background-color: #f2f2f2;
 }
@@ -15,15 +14,43 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header,
+.features,
+.hotel-search,
+.main-footer,
+.filters,
+.catalog {
+  text-transform: uppercase;
+}
+
+
+
 .site-navigation,
 .features-list,
 .features-item-list {
   list-style: none;
+
 }
 
 .site-navigation a {
   color: #000000;
   font-weight: bold;
+  line-height: 26px;
 }
 
 .site-navigation a:hover,
@@ -32,12 +59,13 @@ a {
 }
 
 .site-navigation a:active {
-  color: #cacaca;
+  color: rgba(0,0,0,0.3);
 }
 
 .form-title a {
   font-size: 21px;
   color: #ffffff;
+  line-height: 26px;
 
   background-color: #766357;
 }
@@ -48,8 +76,7 @@ a {
 }
 
 .form-title a:active{
-
-  color: #928a85;
+  color: rgba(255,255,255,0.3);
   background-color: #503e33;
 }
 
@@ -69,8 +96,11 @@ a {
 }
 
 .features h1 {
+  color: #000000;
   font-size: 21px;
   font-weight: bold;
+  line-height: 26px;
+
 }
 
 .features-list .features-item-big {
@@ -80,9 +110,15 @@ a {
 }
 
 .features-item-list {
-  color: #333333;
-
   background-color: #ffffff;
+}
+
+.features-item-list h3 {
+  color: #000000;
+}
+
+.features-item-list p {
+  color: #333333;
 }
 
 .features-item-small {
@@ -96,12 +132,14 @@ a {
 }
 
 .hotel-search b {
+  color: #000000;
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
 }
 
 .search-form-item {
+  color: #000000;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -154,7 +192,7 @@ a {
   list-style: none;
 }
 
-.catalog h3 a {
+.hotel-caption a {
   color: #000000;
 }
 
@@ -182,11 +220,11 @@ a {
 }
 
 .button-booking:active {
-
-  color: #928a85;
+  color: rgba(255,255,255,0.3);
   background-color: #503e33;
 }
 
 .catalog-item-rate b {
+  color: #666666;
   font-weight: normal;
 }
