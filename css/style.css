@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -29,6 +34,14 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
+  background: url(../img/background-header.jpg) top no-repeat;
+}
+
 .main-header,
 .features,
 .hotel-search,
@@ -38,13 +51,10 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-
-
 .site-navigation,
 .features-list,
 .features-item-list {
   list-style: none;
-
 }
 
 .site-navigation a {
@@ -80,15 +90,57 @@ input[type="radio"].visually-hidden {
   background-color: #503e33;
 }
 
+.main-header {
+  width: 100%;
+  margin-bottom: 61px;
+}
+
+.main-navigation {
+  position: relative;
+}
+
+.site-navigation {
+  display: flex;
+  align-items: center;
+
+  height: 56px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+
+  position: absolute;
+  left: 530px;
+  top: 0;
+}
+
+.site-navigation li {
+  width: 239px;
+  text-align: center;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 244px;
+}
+
 .intro {
   text-align: center;
 
-  background: url(../img/background-header.jpg) center no-repeat;
+  margin-bottom: 147px;
 }
 
 .features {
   text-align: center;
   line-height: 21px;
+
+  margin-bottom: 55px;
+
+  background-color: #ffffff;
 }
 
 .features h3 {
@@ -129,6 +181,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 
   text-align: center;
+  background-color: #ffffff;
 }
 
 .hotel-search b {
@@ -180,6 +233,9 @@ input[type="radio"].visually-hidden {
 
 
 .main-footer {
+  display: flex;
+  justify-content: space-around;
+
   background-color: #f9fbf6;
 }
 
@@ -188,8 +244,27 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 
-.catalog ul {
+.inner .container {
+  background: url(../img/filter-background.jpg) top no-repeat;
+}
+
+.filters,
+.catalog,
+.inner-footer {
+  padding: 0 73px;
+}
+
+.catalog {
+  background-color: #fefefe;
+}
+
+.catalog-list {
   list-style: none;
+}
+
+.catalog-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .hotel-caption a {
