@@ -101,7 +101,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   height: 56px;
@@ -131,6 +130,11 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li:last-child {
   margin-right: 6%;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .site-navigation li:nth-child(1),
