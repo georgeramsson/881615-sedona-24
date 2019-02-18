@@ -90,8 +90,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   width: 100%;
-  height: 56px;
-  margin-bottom: -14px;
+  min-height: 56px;
 }
 
 .main-navigation {
@@ -103,7 +102,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
 
-  height: 56px;
+  min-height: 56px;
   margin: 0;
   padding: 0;
 
@@ -132,9 +131,8 @@ input[type="radio"].visually-hidden {
   margin-right: 6%;
 }
 
-.site-navigation li:nth-child(3) {
-  margin-left: auto;
-  margin-right: 0;
+.site-navigation li:nth-child(2) {
+  margin-right: auto;
 }
 
 .site-navigation li:nth-child(1),
