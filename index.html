@@ -13,15 +13,15 @@
 
       <header class="main-header">
         <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/header-logo.svg" width="138" height="70" alt="Город Седона">
+          </a>
           <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
-          <a class="main-header-logo">
-            <img src="img/header-logo.svg" width="138" height="70" alt="Город Седона">
-          </a>
         </nav>
       </header>
 
@@ -42,14 +42,16 @@
           </div>
           <ol class="features-list">
             <li class="features-item-big">
-              <div class="features-item-img">
-                <img src="img/sedona-town.jpg" width="800" height="256" alt="Городок Седона">
-              </div>
-              <div class="features-item-text">
-                <h3>Настоящий городок</h3>
-                <span>- №1 -</span>
-                <p>Седона - не аттракцион для туристов, там течет своя жизнь
-                </p>
+              <div class="features-item-big-info">
+                <div class="features-item-img">
+                  <img src="img/sedona-town.jpg" width="800" height="256" alt="Городок Седона">
+                </div>
+                <div class="features-item-text">
+                  <h3>Настоящий городок</h3>
+                  <span>- №1 -</span>
+                  <p>Седона - не аттракцион для туристов, там течет своя жизнь
+                  </p>
+                </div>
               </div>
               <ul class="features-item-list">
                 <li>
@@ -67,14 +69,16 @@
               </ul>
             </li>
             <li class="features-item-big">
-              <div class="features-item-img">
-                <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
-              </div>
-              <div class="features-item-text">
-                <h3>Там есть мост дьявола</h3>
-                <span>- №2 -</span>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь
-                </p>
+              <div class="features-item-big-info">
+                <div class="features-item-img">
+                  <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
+                </div>
+                <div class="features-item-text">
+                  <h3>Там есть мост дьявола</h3>
+                  <span>- №2 -</span>
+                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь
+                  </p>
+                </div>
               </div>
             </li>
             <li class="features-item-small">
@@ -115,27 +119,27 @@
             <p class="search-form-item">
               <label for="arrival">Дата заезда:</label>
               <input id="arrival" type="text" name="arrival-date" value="24 апреля 2017">
-              <button class="calendar">
+              <button class="calendar" type="button">
                 <span class="visually-hidden">Выбор даты</span>
               </button>
             </p>
             <p class="search-form-item">
               <label for="departure">Дата выезда:</label>
               <input id="departure" type="text" name="departure-date" value="4 июля 2017">
-              <button class="calendar">
+              <button class="calendar" type="button">
                 <span class="visually-hidden">Выбор даты</span>
               </button>
             </p>
             <p class="search-form-item">
               <label for="adults">Взрослые:</label>
               <button class="button-minus" type="button"><span class="visually-hidden">-</span></button>
-              <input id="adults" type="number" name="adults-number" value="2">
+              <input id="adults" type="text" name="adults-number" value="2">
               <button class="button-plus" type="button"><span class="visually-hidden">+</span></button>
             </p>
             <p class="search-form-item">
               <label for="children">Дети:</label>
               <button class="button-minus" type="button"><span class="visually-hidden">-</span></button>
-              <input id="children" type="number" name="children-number" value="0">
+              <input id="children" type="text" name="children-number" value="0">
               <button class="button-plus" type="button"><span class="visually-hidden">+</span></button>
             </p>
             <button class="button" type="submit">Найти</button>

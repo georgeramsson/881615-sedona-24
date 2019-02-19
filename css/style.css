@@ -172,6 +172,15 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.features-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .index-headline {
   width: 573px;
 
@@ -192,13 +201,35 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list .features-item-big {
+  width: 100%;
+
   color: #ffffff;
 
   background-color: #81b3d2;
 }
 
+.features-item-big-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features-item-big-info:last-child {
+  flex-direction: row-reverse;
+}
+
 .features-item-list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
   background-color: #ffffff;
+}
+
+.features-item-list li {
+  width: 400px;
 }
 
 .features-item-list h3 {
@@ -210,6 +241,9 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-small {
+  width: 400px;
+  margin: 0;
+
   background-color: #eeeeee;
 }
 
@@ -241,6 +275,10 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
 
   border: none;
+}
+
+.features-item-img img {
+  display: block;
 }
 
 .button {
@@ -280,7 +318,8 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 
-.inner .container {
+.inner main {
+  margin-top: 0;
   background: url(../img/filter-background.jpg) top no-repeat;
 }
 
@@ -290,12 +329,58 @@ input[type="radio"].visually-hidden {
   padding: 0 73px;
 }
 
+.filters {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter fieldset {
+  width: 241px;
+}
+
+.filter fieldset:nth-child(2) {
+  margin-right: auto;
+}
+
 .catalog {
   background-color: #fefefe;
 }
 
 .catalog-list {
+  padding: 0;
   list-style: none;
+}
+
+.hotels-sorting {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotels-sorting-result {
+  display: flex;
+  align-items: center;
+
+  width: 529px;
+}
+
+.sorting-items {
+  display: flex;
+  justify-content: space-between;
+
+  width: 288px;
+  list-style: none;
+}
+
+.result-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 241px;
 }
 
 .catalog-item {

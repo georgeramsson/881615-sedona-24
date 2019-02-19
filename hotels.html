@@ -14,15 +14,15 @@
 
       <header class="main-header">
         <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/header-logo.svg" width="138" height="70" alt="Город Седона">
+          </a>
           <ul class="site-navigation inner-site-navigation">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
             <li><a class="site-navigation-current">Гостиницы</a></li>
           </ul>
-          <a class="main-header-logo" href="index.html">
-            <img src="img/header-logo.svg" width="138" height="70" alt="Город Седона">
-          </a>
         </nav>
 
       </header>
@@ -74,16 +74,16 @@
               <legend>Стоимость в сутки (Р):</legend>
               <ul class="filter-price">
                 <li>
-                  <input type="text" name="filter-price-min" id="min-price" value="" placeholder="от 0">
-                  <label class="visually-hidden" for="min-price">
-                    Минимальная стоимость
+                  <label for="min-price">
+                    От
                   </label>
+                  <input type="text" name="filter-price-min" id="min-price" value="0">
                 </li>
                 <li>
-                  <input type="text" name="filter-price-max" id="max-price" value="" placeholder="до 3000">
-                  <label class="visually-hidden" for="max-price">
-                    Максимальная стоимость
+                  <label for="max-price">
+                    До
                   </label>
+                  <input type="text" name="filter-price-max" id="max-price" value="3000">
                 </li>
                 <!-- тут будет бегунок -->
               </ul>
@@ -97,20 +97,24 @@
           <h2 class="visually-hidden">Список гостиниц</h2>
 
           <div class="hotels-sorting">
-            <h3>Отсортировать поиск</h3>
-            <b>Найдено: 3</b>
-            <p>Сортировка:</p>
-            <ul class="sorting-items">
-              <li>
-                <a href="#">По цене</a>
-              </li>
-              <li>
-                <a href="#">По типу</a>
-              </li>
-              <li>
-                <a href="#">По рейтингу</a>
-              </li>
-            </ul>
+            <h3 class="visually-hidden">Отсортировать поиск</h3>
+            <div class="hotels-sorting-result">
+              <div class="result-info">
+                <b>Найдено: 3</b>
+                <p>Сортировка:</p>
+              </div>
+              <ul class="sorting-items">
+                <li>
+                  <a href="#">По цене</a>
+                </li>
+                <li>
+                  <a href="#">По типу</a>
+                </li>
+                <li>
+                  <a href="#">По рейтингу</a>
+                </li>
+              </ul>
+            </div>
             <ul class="sorting-buttons">
               <li>
                 <a href="#">
