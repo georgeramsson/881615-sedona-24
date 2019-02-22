@@ -166,8 +166,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
   line-height: 21px;
 
-  margin-bottom: 55px;
-
   background-color: #ffffff;
 }
 
@@ -222,20 +220,22 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-text {
-  width: 400px;
+  width: 304px;
 
   padding-top: 25px;
-
+  padding-bottom: 30px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .features-item-text h3 {
   margin-bottom: 25px;
-  padding: 0px 120px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .features-item-text p {
   margin-top: 20px;
-  padding: 0px 47px;
 }
 
 .features-item-list {
@@ -268,24 +268,30 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-small {
-  width: 400px;
+  width: 270px;
   margin: 0;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  padding-left: 65px;
+  padding-right: 65px;
 
   background-color: #eeeeee;
 }
 
 .features-item-small h3 {
-  margin-top: 45px;
   margin-bottom: 25px;
-  margin-left: 145px;
-  margin-right: 145px;
+  margin-right: 80px;
+  margin-left: 80px;
+
+  color: #000000;
 }
 
 .features-item-small p {
-  margin-top: 25px;
-  margin-bottom: 60px;
-  margin-left: 60px;
-  margin-right: 63px;
+  margin-top: 20px;
+}
+
+.features-item-small:nth-child(3) p {
+
 }
 
 .hotel-search {
