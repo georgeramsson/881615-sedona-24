@@ -149,7 +149,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
 
   width: 1200px;
-  margin-bottom: 60px;
   padding-top: 76px;
   padding-bottom: 79px;
 
@@ -186,6 +185,12 @@ input[type="radio"].visually-hidden {
 
   margin-left: auto;
   margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.index-headline h1 {
+  margin-bottom: 30px;
 }
 
 .features h3 {
@@ -200,7 +205,11 @@ input[type="radio"].visually-hidden {
 
 }
 
-.features-list .features-item-big {
+.features-item-big {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
   width: 100%;
 
   color: #ffffff;
@@ -208,19 +217,31 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
 }
 
-.features-item-big-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.features-item-big:first-child {
+  flex-direction: row-reverse;
 }
 
-.features-item-big-info:last-child {
-  flex-direction: row-reverse;
+.features-item-text {
+  width: 400px;
+
+  padding-top: 25px;
+
+}
+
+.features-item-text h3 {
+  margin-bottom: 25px;
+  padding: 0px 120px;
+}
+
+.features-item-text p {
+  margin-top: 20px;
+  padding: 0px 47px;
 }
 
 .features-item-list {
   margin: 0;
   padding: 0;
+  width: 100%;
 
   display: flex;
   flex-wrap: wrap;
@@ -229,7 +250,13 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-list li {
-  width: 400px;
+  width: 300px;
+
+  padding-top: 140px;
+  padding-bottom: 70px;
+  padding-right: 50px;
+  padding-left: 50px;
+
 }
 
 .features-item-list h3 {
@@ -245,6 +272,20 @@ input[type="radio"].visually-hidden {
   margin: 0;
 
   background-color: #eeeeee;
+}
+
+.features-item-small h3 {
+  margin-top: 45px;
+  margin-bottom: 25px;
+  margin-left: 145px;
+  margin-right: 145px;
+}
+
+.features-item-small p {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  margin-right: 63px;
 }
 
 .hotel-search {
