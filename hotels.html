@@ -40,7 +40,7 @@
               <legend>Инфраструктура:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox filter-input-checkbox-checked" type="checkbox" name="pool" id="filter-pool" checked>
                   <label for="filter-pool">Бассейн</label>
                 </li>
                 <li class="filter-option">
@@ -57,38 +57,34 @@
               <legend>Тип жилья:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox filter-input-checkbox-checked" type="checkbox" name="hotel" id="filter-hotel" checked>
                   <label for="filter-pool">Гостиница</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox filter-input-checkbox-checked" type="checkbox" name="motel" id="filter-motel" checked>
                   <label for="filter-motel">Мотель</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox filter-input-checkbox-checked" type="checkbox" name="apartments" id="filter-apartments" checked>
                   <label for="filter-pool">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
-              <legend>Стоимость в сутки (Р):</legend>
-              <ul class="filter-price">
-                <li>
-                  <label for="min-price">
-                    От
-                  </label>
-                  <input type="text" name="filter-price-min" id="min-price" value="0">
-                </li>
-                <li>
-                  <label for="max-price">
-                    До
-                  </label>
-                  <input type="text" name="filter-price-max" id="max-price" value="3000">
-                </li>
-                <!-- тут будет бегунок -->
-              </ul>
-            </fieldset>
-            <button type="submit" class="filter-button button">Показать</button>
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            </div>
           </form>
         </section>
 
@@ -100,7 +96,7 @@
             <b>Найдено: 3</b>
             <p>Сортировка:</p>
             <ul class="sorting-items">
-              <li>
+              <li class="sorting-items-active">
                 <a href="#">По цене</a>
               </li>
               <li>
@@ -111,12 +107,12 @@
               </li>
             </ul>
             <ul class="sorting-buttons">
-              <li>
+              <li class="sorting-buttons-up">
                 <a href="#">
                   <span class="visually-hidden">По возрастанию</span>
                 </a>
               </li>
-              <li>
+              <li class="sorting-buttons-down">
                 <a href="#">
                   <span class="visually-hidden">По убыванию</span>
                 </a>
