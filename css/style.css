@@ -412,7 +412,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
 
   width: 570px;
-  min-height: 86px;
+  min-height: 85px;
   margin-top: 38px;
   margin-bottom: 0;
 
@@ -427,7 +427,7 @@ input[type="radio"].visually-hidden {
 
   width: 460px;
   margin-top: 0;
-  padding-top: 53px;
+  padding-top: 55px;
   padding-bottom: 25px;
   padding-left: 55px;
   padding-right: 55px;
@@ -467,10 +467,10 @@ input[type="radio"].visually-hidden {
 
 .search-form-item-big input {
   margin-right: 0;
-  width: 326px;
+  width: 310px;
   min-height: 38px;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 35px;
 }
 
 .search-form-item input:hover {
@@ -520,6 +520,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button-minus {
+  position: relative;
+
   margin-right: 0;
   margin-left: 0;
 
@@ -528,25 +530,31 @@ input[type="radio"].visually-hidden {
 
   background-color: #f2f2f2;
   border: none;
-
-  background-image: url("../img/minus-button.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.button-minus:hover {
-  background-image: url("../img/minus-button-hover.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.button-minus::before {
+  content: "";
+
+  position: absolute;
+
+  width: 12px;
+  height: 3px;
+
+  background-color: #a9a9a9;
+  transform: translate(-50%);
 }
 
-.button-minus:active {
-  background-image: url("../img/minus-button-active.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.button-minus:hover::before {
+  background-color: #000000;
+}
+
+.button-minus:active::before {
+  background-color: #81b3d2;
 }
 
 .button-plus {
+  position: relative;
+
   margin-right: 0;
   margin-left: 0;
 
@@ -555,22 +563,48 @@ input[type="radio"].visually-hidden {
 
   background-color: #f2f2f2;
   border: none;
-
-  background-image: url("../img/plus-button.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.button-plus:hover {
-  background-image: url("../img/plus-button-hover.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.button-plus::before {
+  content: "";
+
+  position: absolute;
+
+  width: 12px;
+  height: 3px;
+
+  background-color: #a9a9a9;
+  transform: translate(-50%);
 }
 
-.button-plus:active {
-  background-image: url("../img/plus-button-active.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.button-plus:hover::before {
+  background-color: #000000;
+}
+
+.button-plus:active::before {
+  background-color: #81b3d2;
+}
+
+.button-plus::after {
+  content: "";
+
+  position: absolute;
+  left: 35%;
+
+  width: 12px;
+  height: 3px;
+
+  background-color: #a9a9a9;
+
+  transform: rotate(90deg);
+}
+
+.button-plus:hover::after {
+  background-color: #000000;
+}
+
+.button-plus:active::after {
+  background-color: #81b3d2;
 }
 
 .search-form-item {
@@ -793,7 +827,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.filter-input-checkbox-checked + label::before {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
 
@@ -808,7 +842,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter-input-checkbox-checked:disabled + label::before {
+.filter-input-checkbox:checked:disabled + label::before {
   background-image: url("../img/checkbox-on-disabled.png");
   background-repeat: no-repeat;
   background-position: 0 0;
