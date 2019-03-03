@@ -102,6 +102,7 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   min-height: 56px;
   margin: 0;
@@ -247,6 +248,10 @@ input[type="radio"].visually-hidden {
 
 .features-item-big:first-child {
   flex-direction: row-reverse;
+}
+
+.features-item-img {
+  width: 800px;
 }
 
 .features-item-text {
