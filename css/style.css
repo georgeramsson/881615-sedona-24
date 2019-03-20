@@ -169,10 +169,7 @@ input[type="radio"].visually-hidden {
   padding-top: 76px;
   padding-bottom: 79px;
 
-  background: -webkit-gradient(linear, left top, left bottom, from(#d6e7f1), to(#81a1c2));
-  background: -webkit-linear-gradient(top, #d6e7f1, #81a1c2);
-  background: -o-linear-gradient(top, #d6e7f1, #81a1c2);
-  background: linear-gradient(to bottom, #d6e7f1, #81a1c2);
+  background-color: #81a1c2;
   background-image: url(../img/background-header.jpg);
   background-repeat: no-repeat;
   background-position: 0 -56px;
@@ -504,6 +501,10 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.search-form-item label {
+  width: 118px;
+}
+
 .search-form-item-big {
   position: relative;
   width: 100%;
@@ -511,15 +512,10 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
 }
 
-.search-form-item-big label {
-  margin-right: auto;
-}
-
 .search-form-item-big input {
-  margin-right: 0;
-  width: 300px;
+  width: 305px;
   min-height: 38px;
-  padding-left: 15px;
+  padding-left: 10px;
   padding-right: 35px;
 }
 
@@ -553,10 +549,6 @@ input[type="radio"].visually-hidden {
 
 .search-form-item-small {
   width: 50%;
-}
-
-.search-form-item-small label {
-  margin-right: auto;
 }
 
 .search-form-item-small input {
@@ -671,14 +663,15 @@ input[type="radio"].visually-hidden {
   margin-bottom: 28px;
 }
 
-.search-form-item-small:nth-child(2n) label {
+.search-form-item-small:nth-child(even) label {
   margin-left: 50px;
+  width: 68px;
 }
 
 .search-form .button {
   display: block;
   min-height: 58px;
-  margin-top: 24px;
+  margin-top: 26px;
 
   font-size: 21px;
   font-weight: bold;
